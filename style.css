@@ -1,0 +1,93 @@
+/* positioning */
+.container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content 50px;
+    grid-template-areas: 
+        "header"
+        "cover"
+        "text"
+        "ft";
+} 
+.header{
+    margin-top: 20px;
+}
+iframe{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    width: 64vw;
+    height: 36vw;
+}
+
+.header{
+    grid-area: header;
+}
+.book-cover{
+    grid-area: cover;
+}
+.text{
+    grid-area: text;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* text and color styles */
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: 'Roboto', sans-serif;
+}
+.git{
+    text-align: center;
+}
+h1{
+    font-weight:250;
+    text-align: center;
+}
+h2{
+    font-weight:225;
+}
+h3{
+    font-weight:200;
+}
+hr{
+    margin: 7px;
+    height: 1px;
+    border:none;
+    color:gray;
+    background-color:gray
+}
+.img-break{
+    line-height: 2px;
+}
+.blog-post-link{
+    text-decoration: none;
+    color:black;
+}
+.nav-link{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(85, 85, 85);
+    text-decoration: underline;
+}
+a:active{
+    color:rgb(85, 85, 85);
+    text-decoration: underline;
+}
+.button{
+    text-decoration: none;
+    color:black;
+}
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+.avatar{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
